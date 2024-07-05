@@ -11,6 +11,9 @@
             max-width:600px;          
             margin: 0rem auto;
         }
+        #main-container{
+            background-color: rgba(50, 42, 42, 0.374);
+        }
        /* ADDING BORDER RADIUS FROM TABLET SIZE */
         @media (min-width: 767.98px) {
             #main-container{
@@ -23,22 +26,22 @@
    
 
   <!--   div to house the login form -->
-     <div class="container-lg bg-secondary pt-3 mt-md-5" id="main-container">
+     <div class="container-lg pt-3 mt-md-5" id="main-container">
         <h1 class="text-center">Welcome back</h1>       
 
        <!--  form element to house the form -->
-       <form>
+       <form >
         <div class="mb-3">
           <label for="name-of-staff" class="form-label"></label>
-          <input type="text" class="form-control" id="name-of-staff" placeholder="Enter your Name" >          
+          <input type="text" class="form-control" id="name-of-staff" placeholder="Enter your Name" autocomplete="given-names">          
         </div>
         <div class="mb-3">
           <label for="username" class="form-label"></label>
-          <input type="text" class="form-control" id="username" placeholder="Enter username">
+          <input type="text" class="form-control" id="username" placeholder="Enter username" autocomplete="username">
         </div>
         <div class="mb-3">
           <label for="password" class="form-label"></label>
-          <input type="password" class="form-control" id="password" placeholder="Enter password">
+          <input type="password" class="form-control" id="password" placeholder="Enter password" autocomplete="off">
         </div>
         <button class="btn btn-primary">Login</button>        
       </form>
